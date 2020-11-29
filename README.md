@@ -35,9 +35,9 @@ namespace DataAnnotationsExample.Models
 
 
 namespace DataAnnotationsExample.Validators  
-{ 
+{  
     public class InUniversityValidationAttribute : ValidationAttribute  
-    
+      
     {  
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)  
         
