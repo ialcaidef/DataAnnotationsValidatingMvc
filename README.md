@@ -59,8 +59,6 @@ namespace DataAnnotationsExample.Validators
             return ValidationResult.Success;  
             
         }  
-        
     }  
-    
 }  
 
