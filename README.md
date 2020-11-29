@@ -35,29 +35,19 @@ namespace DataAnnotationsExample.Models
 
 
 namespace DataAnnotationsExample.Validators  
-
-{  
-
+{ 
     public class InUniversityValidationAttribute : ValidationAttribute  
     
     {  
-    
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)  
         
         {  
-        
-            Student student = (Student)validationContext.ObjectInstance;  
-            
+            Student student = (Student)validationContext.ObjectInstance;            
             if (!student.UniversityStudent)  
-            
-            {  
-            
-                return new ValidationResult("Sorry you must be a student of the university in order to submit");  
-                
-            }  
-            
+            {            
+                return new ValidationResult("Sorry you must be a student of the university in order to submit");                
+            }      
             return ValidationResult.Success;  
-            
         }  
     }  
 }  
